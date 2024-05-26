@@ -214,11 +214,11 @@ footer {
         order: 1;
         display: block;
         margin-right: 0px;
-        margin-left: 0px;;
+        margin-left: 0px;
     }
 
     .header-container .menu img {
-        width:24px; /* Smaller size for mobile */
+        width: 24px; /* Smaller size for mobile */
     }
 
     .header-container .logo {
@@ -226,21 +226,21 @@ footer {
         position: relative;
         left: 0;
         transform: none;
-        margin: 0;
+        margin: 0 10px; /* Adjust as necessary */
     }
 
     .header-container .logo img {
         height: 80px; /* Smaller size for mobile */
     }
 
-    .header-container .contact-info {
+    .header-container .contact-info-header {
         order: 3;
         text-align: left;
         align-items: flex-start;
         margin-right: 0px;
     }
 
-    .header-container .contact-info p {
+    .header-container .contact-info-header p {
         font-size: 14px; /* Smaller text size for mobile */
         text-align: left;
         font-weight: bold;
@@ -251,9 +251,30 @@ footer {
         display: none;
     }
 
+    main {
+        padding-top: 10px;
+        padding-left: 30px; /* Adjust as necessary */
+        padding-right: 30px; /* Adjust as necessary */
+    }
+
     .repair-content, .services-content, .footer-content {
         flex-direction: column;
         align-items: center;
+    }
+
+    .repair-shop h1, .popular-services h1, .customer-reviews h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .repair-shop h2, .popular-services h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .repair-text, .services-text, .reviews-content {
+        width: 100%;
+        text-align: center; /* Center the text */
     }
 
     .text, .image {
@@ -264,6 +285,10 @@ footer {
         text-align: center;
     }
 
+    p {
+        font-size: 12px;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -272,5 +297,59 @@ footer {
     nav ul li {
         margin-left: 0;
         margin-top: 10px;
+    }
+
+    .customer-reviews .reviews-content {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .customer-reviews .review {
+        width: 90%; /* Adjust width for better centering */
+        text-align: left;
+        margin-bottom: 20px; /* Add some spacing between reviews */
+    }
+
+    .customer-reviews .review span {
+        font-weight: bold;
+    }
+
+    .customer-reviews .review:nth-child(odd), .customer-reviews .review:nth-child(even) {
+        text-align: left;
+        align-self: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .footer-content h1 {
+        font-size: 16px;
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-content .footer-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        order: 2;
+    }
+
+    .footer-content .hours, .footer-content .contact-info-footer {
+        width: 48%;
+    }
+
+    .footer-content h2 {
+        font-size: 12px;
+    }
+
+    .footer-content p {
+        font-size: 10px;
     }
 }
