@@ -202,8 +202,13 @@ footer {
     color: #fff;
 }
 
+/*****************/
 /* Media queries */
-@media (max-width: 768px) {
+/*****************/
+
+/* Smartphones (portrait and landscape) */
+@media (max-width: 480px) {
+    /* Your CSS rules for mobile phones */
     .header-container {
         flex-direction: row;
         justify-content: left;
@@ -353,3 +358,24 @@ footer {
         font-size: 10px;
     }
 }
+
+/* Smartphones and Tablets (portrait) */
+@media (max-width: 767px) {
+    /* Your CSS rules for small devices */
+}
+
+/* Tablets (portrait and landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Your CSS rules for tablets */
+}
+
+/* Laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Your CSS rules for laptops */
+}
+
+/* Desktops and larger screens */
+@media (min-width: 1441px) {
+    /* Your CSS rules for desktops */
+}
+
