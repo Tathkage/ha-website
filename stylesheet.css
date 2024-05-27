@@ -102,7 +102,6 @@ h1 span, h2 span {
 .repair-text, .services-text, .reviews-content {
     background-color: #fff;
     padding: 20px;
-    margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -202,6 +201,16 @@ footer {
     color: #fff;
 }
 
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-info .hours, .footer-info .contact-info-footer {
+    width: 48%;
+}
+
 /*****************/
 /* Media queries */
 /*****************/
@@ -267,6 +276,10 @@ footer {
         align-items: center;
     }
 
+    .repair-content, .services-content {
+        gap: 40px;
+    }
+
     .repair-shop h1, .popular-services h1, .customer-reviews h1 {
         font-size: 24px;
         text-align: center;
@@ -304,6 +317,14 @@ footer {
         margin-top: 10px;
     }
 
+    .customer-reviews h1 {
+        margin-bottom: 5px;
+    }
+
+    .reviews-header {
+        margin-bottom: 10px;
+    }
+
     .customer-reviews .reviews-content {
         width: 100%;
         padding: 0px;
@@ -315,7 +336,7 @@ footer {
         margin-bottom: 20px; /* Add some spacing between reviews */
     }
 
-    .customer-reviews .review span {
+    .customer-reviews .reviews-header, .customer-reviews .review span {
         font-weight: bold;
     }
 
@@ -336,7 +357,7 @@ footer {
         font-size: 16px;
         order: 1;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .footer-content .footer-info {
@@ -371,11 +392,46 @@ footer {
 
 /* Laptops */
 @media (min-width: 1025px) and (max-width: 1440px) {
-    /* Your CSS rules for laptops */
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer-content > h1 {
+        width: 33%;
+    }
+
+    .footer-content > .footer-info {
+        width: 66%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content .hours, .footer-content .contact-info-footer {
+        width: 50%;
+    }
 }
 
 /* Desktops and larger screens */
 @media (min-width: 1441px) {
-    /* Your CSS rules for desktops */
-}
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
 
+    .footer-content > h1 {
+        width: 33%;
+    }
+
+    .footer-content > .footer-info {
+        width: 66%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content .hours, .footer-content .contact-info-footer {
+        width: 50%;
+    }
+}
