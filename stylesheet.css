@@ -22,6 +22,8 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .menu {
@@ -49,11 +51,11 @@ header {
 }
 
 .logo img {
-    height: 125px;
+    height: 50px;
 }
 
 .logo {
-    margin: 0 5px;
+    margin: 0 5px; /* FIX THJIS PART */ /* Not centered */
 }
 
 nav ul {
@@ -61,10 +63,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
 }
 
 nav ul li a {
@@ -91,8 +89,7 @@ h1 span, h2 span {
 }
 
 .repair-shop, .popular-services, .customer-reviews {
-    padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .repair-shop .image img, .popular-services .image img {
@@ -222,6 +219,8 @@ footer {
         flex-direction: row;
         justify-content: left;
         padding: 0 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .header-container .menu {
@@ -244,7 +243,7 @@ footer {
     }
 
     .header-container .logo img {
-        height: 80px; /* Smaller size for mobile */
+        height: 40px; /* Smaller size for mobile */
     }
 
     .header-container .contact-info-header {
@@ -396,6 +395,15 @@ footer {
 
 /* Laptops */
 @media (min-width: 1025px) and (max-width: 1440px) {
+    .contact-info-header {
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
     .footer-content {
         display: flex;
         justify-content: space-between;
@@ -419,6 +427,15 @@ footer {
 
 /* Desktops and larger screens */
 @media (min-width: 1441px) {
+    .contact-info-header {
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
     .footer-content {
         display: flex;
         justify-content: space-between;
