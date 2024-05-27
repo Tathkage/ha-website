@@ -54,10 +54,6 @@ header {
     height: 50px;
 }
 
-.logo {
-    margin: 0 5px; /* FIX THJIS PART */ /* Not centered */
-}
-
 nav ul {
     list-style-type: none;
     margin: 0;
