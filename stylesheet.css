@@ -66,6 +66,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+.common-content {
+    width: 80%;
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: space-between;
+}
+
 h1, h2, h3 {
     color: #000000;
 }
@@ -92,20 +99,22 @@ h1 span, h2 span {
     max-width: 600px;
 }
 
+.repair-text, .services-text {
+    padding: 20px;
+}
+
 .repair-text, .services-text, .reviews-content {
     background-color: #fff;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .repair-text {
-    width: 28%;
+    width: 50%;
 }
 
 .repair-content, .services-content {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 80px;
 }
@@ -119,10 +128,15 @@ h1 span, h2 span {
     width: 100%;
 }
 
+.customer-reviews h1 {
+    margin-bottom: 5px;
+}
+
 .customer-reviews .reviews-header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .customer-reviews .reviews-header span {
@@ -143,8 +157,11 @@ h1 span, h2 span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the container */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .customer-reviews .review {
@@ -155,13 +172,13 @@ h1 span, h2 span {
 .customer-reviews .review:nth-child(odd) {
     text-align: right;
     align-self: flex-start;
-    margin-left: 10%;
+    padding-left: 15%;
 }
 
 .customer-reviews .review:nth-child(even) {
     text-align: left;
     align-self: flex-end;
-    margin-right: 10%;
+    padding-right: 15%;
 }
 
 .customer-reviews .review span {
