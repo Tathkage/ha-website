@@ -155,9 +155,10 @@ main {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(00, 0, 0, 0.1);
-    padding: 20px;
-    width: 86%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
+    width: 100%;
 }
 
 /* Level 6: Repair-Shop & Popular-Services h2 */
@@ -179,14 +180,35 @@ main {
 }
 
 /* Level 3: Section One - Repair-Shop */
+/* Level 6: Heading 2 */
+.repair-text h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
 /* Level 6: Paragraph */
-.repair-text {
+.repair-text p {
     font-size: 12px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Level 3: Section Two - Popular-Services */
-/* Nothing */
+/* Level 6: Heading 2 */
+.services-text h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Level 6: Paragraph */
+.services-text p {
+    font-size: 12px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /* Level 3: Section Three - Customer-Reviews */
 .customer-reviews {
@@ -242,7 +264,8 @@ main {
     justify-content: cener;
     margin: 0 auto;
     width: 80%;
-    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Level 5: Review */
@@ -327,7 +350,10 @@ footer {
     font-size: 10px;
 }
 
-@media (min-width: 1441px) {
+/* ********************** */
+/* Increasing Media Sizes */
+/* ********************** */
+@media (min-width: 700px) {
     /* ************* */
     /* Level 1: Body */
     /* ************* */
