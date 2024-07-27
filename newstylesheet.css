@@ -1,3 +1,10 @@
+/* ******************* */
+/* Level 0: HTML Fonts */
+/* ******************* */
+html {
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+}
+
 /* ************* */
 /* Level 1: Body */
 /* ************* */
@@ -6,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ededed;
+    font-size: 1rem;
 }
 
 /* *************** */
@@ -32,7 +40,7 @@ header {
 .header-container .menu {
     order: 1;
     display: block;
-    margin-right: 0px;
+    margin-right: 5%;
     margin-left: 0px;
 }
 
@@ -53,9 +61,10 @@ header {
 .header-container .contact-info-header p {
     margin: 0;
     line-height: 1.2;
-    font-size: 14px;
-    text-align: left;
+    /* font-size: 14px; */
+    text-align: center;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 /* Level 4: Logo */
@@ -68,6 +77,7 @@ header {
     left: 0;
     transform: none;
     margin: 0 10px;
+    margin-right: 10%;
 }
 
 /* Level 5: Image */
@@ -85,6 +95,11 @@ header {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
+}
+
+/* Level 4: Nav dropdown */
+.header-container nav.show {
+    display: block;
 }
 
 /* Level 5: Nav ul */
@@ -106,7 +121,8 @@ header {
 .header-container nav ul li a {
     color: #000;
     text-decoration: none;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.2rem;
 }
 
 /* ************* */
@@ -125,9 +141,10 @@ main {
 
 /* Level 4: All Sections h1 */
 .repair-shop h1, .popular-services h1, .customer-reviews h1 {
-    font-size: 24px;
+    /* font-size: 24px; */
     text-align: center;
     color:#000000;
+    font-size: 2rem;
 }
 
 /* Level 4: All Sections h1 span */
@@ -163,9 +180,10 @@ main {
 
 /* Level 6: Repair-Shop & Popular-Services h2 */
 .repair-shop h2, .popular-services h2 {
-    font-size: 16px;
+    /* font-size: 16px; */
     text-align: center;
     color: #000000;
+    font-size: 1.3rem;
 }
 
 /* Level 5: Repair-Shop & Popular-Services Image */
@@ -189,10 +207,11 @@ main {
 
 /* Level 6: Paragraph */
 .repair-text p {
-    font-size: 12px;
+    /* font-size: 12px; */
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 1.2rem;
 }
 
 /* Level 3: Section Two - Popular-Services */
@@ -204,10 +223,11 @@ main {
 
 /* Level 6: Paragraph */
 .services-text p {
-    font-size: 12px;
+    /* font-size: 12px; */
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 1.2rem;
 }
 
 /* Level 3: Section Three - Customer-Reviews */
@@ -281,16 +301,18 @@ main {
 }
 
 .customer-reviews .review p {
-    font-size: 12px;
+    /* font-size: 12px; */
     text-align: left;
+    font-size: 1.2rem;
 }
 
 .customer-reviews .review span {
     text-align: left;
-    font-size: 12px;
+    /* font-size: 12px; */
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 /* *************** */
@@ -314,15 +336,17 @@ footer {
 /* Level 4: Footer Content h1 */
 .footer-content h1 {
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin-top: 0;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.8rem;
+    /* font-size: 16px; */
 }
 
 /* Level 4: Footer Info */
 .footer-info {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
 }
@@ -330,29 +354,68 @@ footer {
 /* Level 5: Hours & Contact-Info-Footer */
 .footer-content .hours, .footer-content .contact-info-footer {
     color: #fff;
-    text-align: left;
-    width: 48%;
+    text-align: center;
 }
 
 /* Level 6: Footer Info h2 */
 .footer-content h2 {
-    text-align: left;
+    text-align: center;
     margin-top: 0;
     color: #fff;
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 1.2rem;
 }
 
 /* Level 6: Footer Info p */
 .footer-content p {
-    text-align: left;
+    text-align: center;
     margin: 5px 0;
     color: #fff;
-    font-size: 10px;
+    /* font-size: 10px; */
+    font-size: 0.8rem;
 }
 
 /* ********************** */
 /* Increasing Media Sizes */
 /* ********************** */
+@media (min-width: 500px) {
+    /* *************** */
+    /* Level 2: Footer */
+    /* *************** */
+    /* Level 4: Footer Info */
+    .footer-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Level 5: Hours & Contact-Info-Footer */
+    .footer-content .hours, .footer-content .contact-info-footer {
+        color: #fff;
+        text-align: left;
+        width: 48%;
+    }
+
+    /* Level 6: Footer Info h2 */
+    .footer-content h2 {
+        text-align: left;
+        margin-top: 0;
+        color: #fff;
+        /* font-size: 12px; */
+        font-size: 1.2rem;
+    }
+
+    /* Level 6: Footer Info p */
+    .footer-content p {
+        text-align: left;
+        margin: 5px 0;
+        color: #fff;
+        /* font-size: 10px; */
+        font-size: 0.8rem;
+    }
+}
+
 @media (min-width: 700px) {
     /* ************* */
     /* Level 1: Body */
@@ -362,74 +425,6 @@ footer {
         margin: 0;
         padding: 0;
         background-color: #ededed;
-    }
-
-    /* *************** */
-    /* Level 2: Header */
-    /* *************** */
-    header {
-        background-color: #2b2c2c;
-        color: #fff;
-    }
-
-    /*  Level 3: Header Container */
-    .header-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    /* Level 4: Menu */
-    .header-container .menu {
-        display: none;
-    }
-
-    /* Level 4: Contact Info Header */
-    /* Level 5: Paragraph */
-    .header-container .contact-info-header p {
-        margin: 0;
-        line-height: 1.2;
-    }
-
-    /* Level 4: Logo */
-    .header-container .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Level 5: Image */
-    .header-container .logo img {
-        height: 50px;
-    }
-
-    /* Level 4: Nav */
-    .header-container nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* Level 5: Nav ul */
-    .header-container nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-
-    /* Level 6: Nav ul li */
-    .header-container nav ul li {
-        list-style-type: none;
-    }
-
-    /* Level 7: Nav ul li a */
-    .header-container nav ul li a {
-        color: #fff;
-        text-decoration: none;
     }
 
     /* ************* */
@@ -443,13 +438,13 @@ footer {
 
     /* Level 3: All Sections */
     .repair-shop, .popular-services, .customer-reviews {
-        margin-bottom: 80px;
+        margin-bottom: 100px;
     }
 
     /* Level 4: All Sections h1 */
     .repair-shop h1, .popular-services h1, .customer-reviews h1 {
         color: #000000;
-        font-size: 32px;
+        /* font-size: 32px; */
         text-align: center;
     }
 
@@ -462,16 +457,16 @@ footer {
     .repair-content, .services-content, .reviews-content {
         display: flex;
         align-items: center;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
     /* Level 4: Repair-Shop and Popular-Services Content */
     .repair-content, .services-content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        gap: 80px;
+        gap: 50px;
     }
 
     /* Level 5: Repair-Shop & Popular-Services Text */
@@ -479,12 +474,13 @@ footer {
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
     }
 
     /* Level 6: Repair-Shop & Popular-Services h2 */
     .repair-shop h2, .popular-services h2 {
         color: #000000;
-        font-size: 22px;
+        /* font-size: 22px; */
         text-align: center;
     }
 
@@ -496,14 +492,11 @@ footer {
 
     /* Level 6: Repair-Shop & Popular-Services img */
     .repair-shop .image img, .popular-services .image img {
-        max-width: 600px;
+        max-width: auto;
     }
 
     /* Level 3: Section One - Repair-Shop */
     /* Level 6: Paragraph */
-    .repair-text {
-        width: 50%;
-    }
 
     /* Level 3: Section Two - Popular-Services */
     /* Nothing */
@@ -545,27 +538,47 @@ footer {
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0,1);
         flex-direction: column;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
     }
 
     /* Level 5: Review */
     .customer-reviews .review {
         margin-bottom: 10px;
-        width: 30%;
+        width: 50%;
     }
 
-    /* Level 5: Review */
-    .customer-reviews .review:nth-child(2n+1) {
-        text-align: right;
+    /* Level 5: Odd Reviews */
+    .customer-reviews .review:nth-child(odd) {
         align-self: flex-start;
+    }
+
+    /* Level 5: Even Reviews */
+    .customer-reviews .review:nth-child(even) {
+        align-self: flex-end;
+    }
+
+    /* Level 6: Odd Review p */
+    .customer-reviews .review:nth-child(odd) p {
+        text-align: right;
         padding-left: 15%;
     }
 
-    .customer-reviews .review span {
-        display: block;
-        font-weight: bold;
-        margin-top: 10px;
+    /* Level 6: Even Review p */
+    .customer-reviews .review:nth-child(even) p {
+        text-align: left;
+        padding-right: 15%;
+    }
+
+    /* Level 6: Odd Review span */
+    .customer-reviews .review:nth-child(odd) span {
+        text-align: right;
+    }
+
+    /* Level 6: Even Review span */
+    .customer-reviews .review:nth-child(even) span {
+        text-align: left;
     }
 
     /* *************** */
@@ -581,6 +594,7 @@ footer {
     /* Level 3: Footer Content */
     .footer-content {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         text-align: left;
         align-items: flex-start;
@@ -590,6 +604,8 @@ footer {
     .footer-content h1 {
         margin-top: 0;
         color: #fff;
+        width: 65%;
+        /* font-size: 18px; */
     }
 
     /* Level 4: Footer Info */
@@ -608,11 +624,208 @@ footer {
     .footer-content h2 {
         margin-top: 0;
         color: #fff;
+        /* font-size: 14px; */
     }
 
     /* Level 6: Footer Info p */
     .footer-content p {
         margin: 5px 0;
         color: #fff;
+        /* font-size: 12px; */
+    }
+}
+
+@media (min-width: 900px) {
+    /* ************* */
+    /* Level 1: Body */
+    /* ************* */
+    /* *************** */
+    /* Level 2: Header */
+    /* *************** */
+    header {
+        background-color: #2b2c2c;
+        color: #fff;
+    }
+
+    /*  Level 3: Header Container */
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }    
+
+    /* Level 4: Menu */
+    .header-container .menu {
+        display: none;
+    }
+
+    /* Level 4: Contact Info Header */
+    .header-container .contact-info-header {
+        order: 1;
+        flex: 1;
+        margin-right: 5%;
+    }
+
+    /* Level 5: Paragraph */
+    .header-container .contact-info-header p {
+        margin: 0;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    /* Level 4: Logo */
+    .header-container .logo {
+        order: 2;
+        flex: 0;
+        text-align: center;
+    }
+
+    /* Level 5: Image */
+    .header-container .logo img {
+        height: 50px;
+    }
+
+    /* Level 4: Nav */
+    .header-container nav {
+        order: 3;
+        flex: 1;
+        display: block;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    /* Level 5: Nav ul */
+    .header-container nav ul {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    /* Level 6: Nav ul li */
+    .header-container nav ul li {
+        margin-right: 10px;
+    }
+
+    /* Level 7: Nav ul li a */
+    .header-container nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    /* ************* */
+    /* Level 2: Main */
+    /* ************* */
+    main {
+        padding-top: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    /* Level 4: All Sections h1 */
+    .repair-shop h1, .popular-services h1, .customer-reviews h1 {
+        color: #000000;
+        /* font-size: 32px; */
+        text-align: center;
+    }
+
+    /* Level 4: Repair-Shop and Popular-Services Content */
+    .repair-content, .services-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Level 5: Repair-Shop & Popular-Services Text */
+    .repair-text, .services-text {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        max-width: 50%;
+    }
+
+    /* Level 5: Repair-Shop & Popular-Services Image */
+    .repair-content .image, .services-content .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1; /* Allow equal flex space */
+        max-width: 50%; /* Ensure they do not exceed half the container's width */
+    }
+
+    /* Level 6: Repair-Shop & Popular-Services h2 */
+    .repair-shop h2, .popular-services h2 {
+        /* color: #000000;
+        font-size: 22px; */
+        text-align: center;
+    }
+
+    /* Level 5: Repair-Shop & Popular-Services Image */
+    /* Level 6: Repair-Shop & Popular-Services img */
+    .repair-shop .image img, .popular-services .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Level 3: Section One - Repair-Shop */
+    /* Level 3: Section Two - Popular-Services */
+    /* Level 3: Section Three - Customer-Reviews */
+    /* Level 4: Reviews Content */
+
+    /* *************** */
+    /* Level 2: Footer */
+    /* *************** */
+    footer {
+        background-color: #2b2c2c;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Level 3: Footer Content */
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    /* Level 4: Footer Content h1 */
+    .footer-content h1 {
+        /* font-size: 18px; */
+        padding-right: 5%;
+    }
+
+    /* Level 4: Footer Info */
+    /* Level 5: Hours & Contact-Info-Footer */
+    /* Level 6: Footer Info h2 */
+    .footer-content h2 {
+        /* font-size: 14px; */
+    }
+
+    /* Level 6: Footer Info p */
+    .footer-content p {
+        /* font-size: 12px; */
+    }
+}
+
+@media (min-width: 1500px) {
+    /* ************* */
+    /* Level 2: Main */
+    /* ************* */
+    main {
+        padding-top: 20px;
+        padding-left: 12%;
+        padding-right: 12%;;
     }
 }
